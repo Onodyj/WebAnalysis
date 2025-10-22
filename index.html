@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Analysis Insights AI Agent - Application Homepage</title>
+
+    <!-- Tailwind (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Inter font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+            --bg-body: #f7f9fb;
+            --card-bg: #ffffff;
+            --muted: #6b7280;
+            --accent: #6366f1;
+            --glass: rgba(255,255,255,0.6);
+        }
+
+        html,body { height: 100%; }
+        body {
+            font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            background: radial-gradient(1200px 600px at -10% 10%, rgba(99,102,241,0.06), transparent),
+                        radial-gradient(900px 500px at 110% 90%, rgba(99,102,241,0.03), transparent),
+                        var(--bg-body);
+            -webkit-font-smoothing:antialiased;
+            -moz-osx-font-smoothing:grayscale;
+            color: #0f172a;
+        }
+
+        .card { 
+            box-shadow: 0 12px 30px -10px rgba(2,6,23,0.12), 0 6px 12px -10px rgba(2,6,23,0.06); 
+            background: linear-gradient(180deg, rgba(255,255,255,0.96), rgba(255,255,255,0.98));
+            backdrop-filter: blur(6px);
+        }
+
+        .kbd {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", "Segoe UI Mono", monospace;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            padding: 4px 8px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            color: #111827;
+        }
+
+        /* Accessibility focus */
+        a:focus, button:focus {
+            outline: 3px solid rgba(99,102,241,0.18);
+            outline-offset: 3px;
+        }
+
+        /* Print friendly */
+        @media print {
+            body { background: white; }
+            .no-print { display: none !important; }
+            .card { box-shadow: none; border: none; }
+        }
+
+        /* small utility to ensure original text styling preserved visually */
+        .preserve-text { white-space: pre-wrap; }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-6">
+
+    <div class="w-full max-w-4xl card border border-gray-100 rounded-2xl p-6 sm:p-10">
+        <header class="flex items-start sm:items-center justify-between gap-4 mb-6">
+            <div class="flex items-center gap-4">
+                <div aria-hidden="true" class="rounded-lg bg-gradient-to-br from-indigo-50 to-indigo-100 p-3 ring-1 ring-indigo-50">
+                    <!-- subtle icon -->
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" class="text-indigo-600" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" stroke-width="1.2" opacity="0.9"/>
+                        <path d="M7 21H17" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                        <circle cx="8.5" cy="9.5" r="1.6" fill="currentColor"/>
+                        <circle cx="15.5" cy="9.5" r="1.6" fill="currentColor"/>
+                    </svg>
+                </div>
+
+                <div>
+                    <h1 class="text-2xl sm:text-3xl font-bold text-slate-900 leading-tight">
+                        Website Analysis Insights - Application Description
+                    </h1>
+                    <p class="mt-1 text-sm text-slate-500">
+                        Page optimized for readability, accessibility, and fast load while preserving all original content.
+                    </p>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-3 no-print">
+                <a href="#deploy" class="text-indigo-600 hover:underline font-medium text-sm">Deploy to GitHub Pages</a>
+                <button id="copyBtn" class="px-3 py-2 bg-indigo-600 text-white text-sm rounded-md shadow-sm hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-300" title="Copy HTML">
+                    Copy HTML
+                </button>
+            </div>
+        </header>
+
+        <section class="bg-white/60 border border-gray-50 p-6 rounded-xl">
+            <h2 class="text-lg sm:text-xl font-semibold text-indigo-600 mb-6">
+                Core Service: AI Agent Automation for Digital Entrepreneurs
+            </h2>
+
+            <div class="space-y-6 text-gray-700 preserve-text">
+                <p>
+                    **Website Analysis Insights** is an integrated platform that deploys specialized AI Agents to automate complex business workflows across Print on Demand, KDP, Affiliate Marketing, and Digital Course businesses.
+                </p>
+
+                <p>
+                    Our core agents—including **Website Analysis Insights**, **Creative Design**, and **Data & Reporting Analysis**—rely on minimal Google API scopes to perform essential functions such as reading scalable business metrics from BigQuery, writing synthesized insights back to Google Sheets, and securely delivering production-ready assets to Cloud Storage.
+                </p>
+
+                <p class="font-semibold text-gray-800">
+                    Data Use Declaration:
+                </p>
+                <p class="bg-indigo-50 border-l-4 border-indigo-500 p-4 rounded-md text-sm">
+                    This application's use and transfer of information received from Google APIs will strictly adhere to the **Google API Services User Data Policy**, including the **Limited Use requirements**. Data is used solely to execute user-initiated, non-advertising business workflows.
+                </p>
+
+                <div class="mt-8 pt-4 border-t border-gray-200 flex flex-col sm:flex-row justify-between items-start sm:items-center text-sm">
+                    <a href="https://www.termsfeed.com/live/d4accb82-1642-4a6d-b0d9-571b8150de7c" target="_blank" rel="noopener" class="text-indigo-600 hover:underline font-medium">
+                        View Privacy Policy (Mandatory)
+                    </a>
+                    <p class="mt-2 sm:mt-0 text-gray-500">
+                        Developer Contact: Onodyj1@gmail.com
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer id="deploy" class="mt-6 text-sm text-gray-500 no-print">
+            <h3 class="text-sm font-semibold text-slate-700 mb-2">Quick deploy to GitHub Pages</h3>
+            <ol class="list-decimal list-inside space-y-2">
+                <li>Create a new repository on GitHub (e.g. <span class="kbd">website-analysis</span>).</li>
+                <li>Commit this file (website_analysis.html) to the repository root or to a <span class="kbd">/docs</span> folder.</li>
+                <li>Enable GitHub Pages: Settings → Pages → Source: choose <span class="kbd">main</span> branch / <span class="kbd">root</span> (or <span class="kbd">/docs</span> if used) → Save.</li>
+                <li>After a short propagation (usually under 1–2 minutes) your site will be available at <span class="kbd">https://&lt;your-username&gt;.github.io/&lt;repo-name&gt;/</span>.</li>
+            </ol>
+
+            <p class="mt-3">If you'd like, I can generate a ready-to-push git snippet and a README with exact commands — tell me whether you want to (1) create the repo yourself, or (2) give me the repo name and I can provide the git commands to run locally.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Copy the full HTML to clipboard for easy paste into a repo
+        document.getElementById('copyBtn').addEventListener('click', async () => {
+            try {
+                const html = document.documentElement.outerHTML;
+                await navigator.clipboard.writeText('<!DOCTYPE html>\\n' + html);
+                const btn = document.getElementById('copyBtn');
+                btn.textContent = 'Copied';
+                setTimeout(() => btn.textContent = 'Copy HTML', 2000);
+            } catch (err) {
+                alert('Copy failed. You can select and copy the page content manually.');
+            }
+        });
+    </script>
+
+</body>
+</html>
